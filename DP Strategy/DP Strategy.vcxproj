@@ -111,6 +111,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="BakingRecipe.h" />
+    <ClInclude Include="BakingRecipeManager.h" />
+    <ClInclude Include="Ingredient.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BakingRecipe.cpp" />
+    <ClCompile Include="BakingRecipeManager.cpp" />
+    <ClCompile Include="Ingredient.cpp" />
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
