@@ -6,10 +6,11 @@
 BakingRecipeManager::BakingRecipeManager(std::string fileName) {
     std::ifstream file;
     std::string line;
+    file.open(fileName);
     while (file >> line) {
         std::cout << line << std::endl;
+        ingredients.push_back(new Ingredient(line));
     }
-    file.open(fileName);
 }
 
 bool BakingRecipeManager::hasAnotherRecipe() const {

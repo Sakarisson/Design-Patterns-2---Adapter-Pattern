@@ -114,6 +114,8 @@
     <ClInclude Include="BakingRecipe.h" />
     <ClInclude Include="BakingRecipeManager.h" />
     <ClInclude Include="Ingredient.h" />
+    <ClInclude Include="Mempool.h" />
+    <ClInclude Include="Memstat.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BakingRecipe.cpp" />
