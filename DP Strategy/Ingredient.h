@@ -1,4 +1,5 @@
-#pragma once
+#ifndef INGREDIENT_H
+#define INGREDIENT_H
 
 #include <string>
 
@@ -11,3 +12,5 @@ public:
 private:
     std::string iName;
 };
+
+#endif

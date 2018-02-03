@@ -1,4 +1,5 @@
-#pragma once
+#ifndef BAKINGRECIPE_H
+#define BAKINGRECIPE_H
 
 #include <string>
 #include <vector>
@@ -14,5 +15,7 @@ public:
     std::string getName() const;
 protected:
     std::string iName;
-    std::vector<Ingredient> neededIng;
+    std::vector<Ingredient*> neededIng;
 };
+
+#endif

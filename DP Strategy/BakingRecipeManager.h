@@ -1,4 +1,5 @@
-#pragma once
+#ifndef BAKINGRECIPEMANAGER_H
+#define BAKINGRECIPEMANAGER_H
 
 #include <string>
 #include <vector>
@@ -16,3 +17,5 @@ private:
     std::vector<BakingRecipe*> bakingRecipes;
     std::vector<Ingredient*> ingredients;
 };
+
+#endif
