@@ -2,11 +2,11 @@
 #define PIZZA_h
 
 #include "BakingRecipe.h"
-#include <string>
 
 class Pizza : public BakingRecipe {
 public:
     Pizza();
+    virtual ~Pizza() {}
     void bakeIt() const override;
 };
 

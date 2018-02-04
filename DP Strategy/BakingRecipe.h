@@ -9,7 +9,7 @@
 class BakingRecipe {
 public:
     BakingRecipe(std::string);
-    virtual ~BakingRecipe() {}
+    virtual ~BakingRecipe();
     virtual void bakeIt() const = 0;
     bool isBakeable(std::vector<Ingredient>&);
     std::string getName() const;

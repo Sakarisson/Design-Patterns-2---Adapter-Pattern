@@ -14,11 +14,19 @@ BakingRecipeManager::BakingRecipeManager(std::string fileName) {
     file.open(fileName);
     while (file >> line) {
         std::cout << line << std::endl;
-        ingredients.push_back(new Ingredient(line));
+        ingredients.push_back(Ingredient(line));
     }
+    file.close();
     // Prepare recipes
     bakingRecipes.push_back(new Pizza());
     bakingRecipes.push_back(new Milksteak());
+}
+
+BakingRecipeManager::~BakingRecipeManager() {
+    for (auto it = bakingRecipes.begin(); it != bakingRecipes.end(); ++it) {
+        delete (*it);
+    }
+    bakingRecipes.clear();
 }
 
 bool BakingRecipeManager::hasAnotherRecipe() const {
@@ -36,4 +44,8 @@ BakingRecipe* BakingRecipeManager::getNextBakingRecipe() {
         bakingRecipes.pop_back();
     }
     return recipe;
+}
+
+std::vector<Ingredient>& BakingRecipeManager::getAvailableIngredients() {
+    return ingredients;
 }

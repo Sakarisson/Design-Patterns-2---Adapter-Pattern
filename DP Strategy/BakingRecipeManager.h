@@ -10,12 +10,13 @@
 class BakingRecipeManager {
 public:
     BakingRecipeManager(std::string);
-    ~BakingRecipeManager() {}
+    ~BakingRecipeManager();
     bool hasAnotherRecipe() const;
     BakingRecipe* getNextBakingRecipe();
+    std::vector<Ingredient>& getAvailableIngredients();
 private:
     std::vector<BakingRecipe*> bakingRecipes;
-    std::vector<Ingredient*> ingredients;
+    std::vector<Ingredient> ingredients;
 };
 
 #endif

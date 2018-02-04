@@ -1,4 +1,5 @@
 #include "Bakery.h"
+#include "Memstat.h"
 
 int main() {
     Bakery bakery;

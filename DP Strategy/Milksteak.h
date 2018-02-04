@@ -2,11 +2,11 @@
 #define MILKSTEAK_H
 
 #include "BakingRecipe.h"
-#include <string>
 
 class Milksteak : public BakingRecipe {
 public:
     Milksteak();
+    virtual ~Milksteak() {}
     void bakeIt() const override;
 };
 
