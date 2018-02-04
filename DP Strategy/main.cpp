@@ -1,12 +1,7 @@
-#include <iostream>
-#include "Ingredient.h"
-// #include "Memstat.h"
+#include "Bakery.h"
 
 int main() {
-    std::cout << "Hello" << std::endl;
-    // BakingRecipeManager* brm = new BakingRecipeManager("skafferi.dat");
-    // delete brm;
-    Ingredient* ing = new Ingredient("Kristian's");
-    std::cout << ing->getName() << std::endl;
+    Bakery bakery;
+    bakery.bakeRecipes();
     return 0;
 }
