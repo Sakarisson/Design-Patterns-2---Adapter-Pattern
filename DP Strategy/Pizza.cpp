@@ -1,7 +1,7 @@
 #include "Pizza.h"
 #include <iostream>
 
-Pizza::Pizza(std::string iName) : BakingRecipe(iName) {
+Pizza::Pizza() : BakingRecipe("Pizza") {
     neededIng.push_back(new Ingredient("oil"));
     neededIng.push_back(new Ingredient("yeast"));
     neededIng.push_back(new Ingredient("wheat-flour"));

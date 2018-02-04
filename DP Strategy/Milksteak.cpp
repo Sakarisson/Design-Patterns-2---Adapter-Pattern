@@ -1,7 +1,7 @@
 #include "Milksteak.h"
 #include <iostream>
 
-Milksteak::Milksteak(std::string iName) : BakingRecipe(iName) {
+Milksteak::Milksteak() : BakingRecipe("Milksteak") {
     neededIng.push_back(new Ingredient("milk"));
     neededIng.push_back(new Ingredient("steak"));
 }

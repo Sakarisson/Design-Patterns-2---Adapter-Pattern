@@ -6,7 +6,7 @@
 
 class Pizza : public BakingRecipe {
 public:
-    Pizza(std::string);
+    Pizza();
     void bakeIt() const override;
 };
 
