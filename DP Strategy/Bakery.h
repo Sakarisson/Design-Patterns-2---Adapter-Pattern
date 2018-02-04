@@ -10,6 +10,6 @@ public:
     void bakeRecipes() const;
 private:
     BakingRecipeManager* brm;
-}
+};
 
 #endif
