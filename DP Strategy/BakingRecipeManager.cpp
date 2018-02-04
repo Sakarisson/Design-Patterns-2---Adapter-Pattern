@@ -5,6 +5,8 @@
 #include "Pizza.h"
 #include "Milksteak.h"
 
+#include "NoBakingException.h"
+
 BakingRecipeManager::BakingRecipeManager(std::string fileName) {
     // Prepare ingredients list
     std::ifstream file;
@@ -25,7 +27,7 @@ bool BakingRecipeManager::hasAnotherRecipe() const {
 
 BakingRecipe* BakingRecipeManager::getNextBakingRecipe() {
     // Copy reference to first recipe or nullptr
-    BakingRecipe* recipe = hasAnotherRecipe() ? bakingRecipes[0] : nullptr;
+    BakingRecipe* recipe = hasAnotherRecipe() ? bakingRecipes[0] : throw new NoBakingException("No more recipes!");
     // Remove recipe from vector
     if (bakingRecipes.size() > 1) {
         for (size_t i = 1; i < bakingRecipes.size(); i++) {
