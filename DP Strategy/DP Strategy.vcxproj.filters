@@ -30,6 +30,18 @@
     <ClInclude Include="Memstat.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Bakery.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Milksteak.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NoBakingException.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Pizza.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BakingRecipe.cpp">
@@ -42,6 +54,15 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Bakery.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Milksteak.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Pizza.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

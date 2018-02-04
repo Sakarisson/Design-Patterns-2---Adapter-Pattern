@@ -111,17 +111,24 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Bakery.h" />
     <ClInclude Include="BakingRecipe.h" />
     <ClInclude Include="BakingRecipeManager.h" />
     <ClInclude Include="Ingredient.h" />
     <ClInclude Include="Mempool.h" />
     <ClInclude Include="Memstat.h" />
+    <ClInclude Include="Milksteak.h" />
+    <ClInclude Include="NoBakingException.h" />
+    <ClInclude Include="Pizza.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Bakery.cpp" />
     <ClCompile Include="BakingRecipe.cpp" />
     <ClCompile Include="BakingRecipeManager.cpp" />
     <ClCompile Include="Ingredient.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Milksteak.cpp" />
+    <ClCompile Include="Pizza.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
